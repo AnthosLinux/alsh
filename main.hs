@@ -26,10 +26,11 @@ shellLoop = do
     input <- T.strip <$> TIO.getLine
 
     case T.unpack input of
-        "exit"  -> exitShell
-        "hello" -> greetUser
-        "help"  -> helpUser
-        "system" -> systemInfo
+        "xexit"  -> exitShell
+        "xehello" -> greetUser
+        "xehelp"  -> helpUser
+        "xesystem" -> systemInfo
+        "xenotes" -> notesCmd
         "cd"    -> changeDirectory
         _       -> executeCommand (T.unpack input)
 
@@ -68,6 +69,12 @@ systemInfo = do
         "\nTelegram: " ++ bold ++ "https://t.me/edenlinux\n" ++ reset
         )
 
+notesCmd :: IO ()
+notesCmd = do
+    System.IO.putStrLn("Enter your text: ")
+    notesCreate <- System.IO.getLine
+    System.IO.putStrLn(notesCreate)
+
 executeCommand :: String -> IO ()
 executeCommand cmd = do
     exitCode <- system cmd
@@ -78,7 +85,8 @@ executeCommand cmd = do
 
 changeDirectory :: IO ()
 changeDirectory = do
-    System.IO.putStr "Enter directory path: "
+    test <- System.IO.getLine
+    System.IO.putStr ("Enter directory path: " ++ test)
     hFlush stdout
     dirPath <- T.strip <$> TIO.getLine
     setCurrentDirectory (T.unpack dirPath)
