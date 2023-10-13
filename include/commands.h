@@ -24,7 +24,7 @@ int ownCmdHandler(char** parsed)
     ListOfOwnCmds[1] = "cd";
     ListOfOwnCmds[2] = "help";
     ListOfOwnCmds[3] = "hello";
-    ListOfOwnCmds[4] = "test";
+    ListOfOwnCmds[4] = "system";
     ListOfOwnCmds[5] = "wit";
 
     for (i = 0; i < NoOfOwnCmds; i++) {
@@ -36,7 +36,7 @@ int ownCmdHandler(char** parsed)
 
     switch (switchOwnArg) {
     case 1:
-        printf("\nGoodbye\n");
+        printf("\nEden Linux" + "awda\n");
         exit(0);
     case 2:
     char* home_dir = getenv("HOME");
