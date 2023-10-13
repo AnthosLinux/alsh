@@ -4,3 +4,10 @@ __  _____ _ __   ___
  >  <  __/ | | | (_) |
 /_/\_\___|_| |_|\___/ 
 ```
+# Installation
+
+```bash
+git clone https://github.com/EdenLinux/xeno.git
+cd xeno
+sh install.sh
+```
