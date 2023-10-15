@@ -28,7 +28,7 @@ while true; do
             if [ "$SHELL" == "/usr/bin/zsh" ]; then
                 echo "function shellLCS(){" >> /home/$user/.zshrc
                 echo " cd $dir" >> /home/$user/.zshrc
-                echo " ./a.out" >> /home/$user/.zshrc
+                echo "$PWD/main" >> /home/$user/.zshrc
                 echo "}" >> /home/$user/.zshrc
                 echo "shellLCS" >> /home/$user/.zshrc
             fi
@@ -36,7 +36,7 @@ while true; do
             if [ "$SHELL" == "/bin/bash" ]; then
                 echo "function shellLCS(){" >> /home/$user/.bashrc
                 echo " cd $dir" >> /home/$user/.bashrc
-                echo " ./a.out" >> /home/$user/.bashrc
+                echo "$PWD/main" >> /home/$user/.bashrc
                 echo "}" >> /home/$user/.bashrc
                 echo "shellLCS" >> /home/$user/.bashrc
             fi
