@@ -1,13 +1,17 @@
 ```
-__  _____ _ __   ___  
-\ \/ / _ \ '_ \ / _ \ 
- >  <  __/ | | | (_) |
-/_/\_\___|_| |_|\___/ 
+           /$$           /$$      
+          | $$          | $$      
+  /$$$$$$$| $$  /$$$$$$$| $$$$$$$ 
+ /$$_____/| $$ /$$_____/| $$__  $$
+| $$      | $$|  $$$$$$ | $$  \ $$
+| $$      | $$ \____  $$| $$  | $$
+|  $$$$$$$| $$ /$$$$$$$/| $$  | $$
+ \_______/|__/|_______/ |__/  |__/
 ```
 # Installation
 
 ```bash
-git clone https://github.com/EdenLinux/xeno.git
-cd xeno
+git clone https://github.com/CalculusLinux/clsh.git
+cd clsh
 sh install.sh
 ```
