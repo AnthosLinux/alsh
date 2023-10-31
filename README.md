@@ -14,7 +14,7 @@
 # Installation
 
 ```bash
-git clone https://github.com/CalculusLinux/clsh.git
-cd clsh
+git clone https://github.com/QuarkLiinux/qlsh.git
+cd qlsh
 sh install.sh
 ```
